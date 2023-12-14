@@ -27,4 +27,21 @@ export default class AppClass extends Component{
   }
 
   // code here
+
+  render(){
+    let image = this.imageData();
+
+    return(
+      <>
+      <h2 className="heading">IMAGE GALLERY USING CLASS</h2>
+        <div className="Bigdiv">
+            {image.map((img)=>{
+              return(
+                <img src={img.img}/>
+              )
+            })}
+        </div>
+      </>
+    )
+  }
 }

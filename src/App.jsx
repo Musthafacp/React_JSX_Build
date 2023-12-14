@@ -25,6 +25,20 @@ const imageData = ()=>{
 
 function App() {
   // code here
+
+  const img = imageData();
+  return(
+    <>
+      <h2 className='heading'>IMAGE GALLERY USING FUNCTION</h2>
+       <div className='Bigdiv'>
+          {img.map((data)=>{
+            return(
+              <img src={data.img} alt=''/>
+            )
+          })}
+      </div>
+    </>
+  )
 }
 
 export default App;

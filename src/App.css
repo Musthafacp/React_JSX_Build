@@ -1,1 +1,18 @@
 /* add your styles here */
+
+.Bigdiv{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,23%);
+    gap: 20px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+
+img{
+    width: 100%;
+}
